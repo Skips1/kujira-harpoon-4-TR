@@ -10,3 +10,28 @@ cd $HOME
 sudo apt update
 sudo apt install make clang pkg-config libssl-dev build-essential screen git jq ncdu bsdmainutils htop -y
 ```
+# Go kurulumu:
+```
+cd $HOME
+wget -O go1.18.1.linux-amd64.tar.gz https://golang.org/dl/go1.18.1.linux-amd64.tar.gz
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.1.linux-amd64.tar.gz && rm go1.18.1.linux-amd64.tar.gz
+echo 'export GOROOT=/usr/local/go' >> $HOME/.bash_profile
+echo 'export GOPATH=$HOME/go' >> $HOME/.bash_profile
+echo 'export GO111MODULE=on' >> $HOME/.bash_profile
+echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bash_profile && . $HOME/.bash_profile
+go version
+```
+
+# Kujira Kurulumu
+moniker-ismi degişecek (<> beraber)
+```
+rm -rf $HOME/kujira-core
+git clone https://github.com/Team-Kujira/core $HOME/kujira-core
+cd $HOME/kujira-core
+make install
+sleep 1
+ln -s $HOME/go/bin/kujirad /usr/local/bin/kujirad
+kujirad init "<moniker-ismi>" --chain-id=harpoon-4
+kujirad version
+```
+Version 0.4.0 olması lazım
