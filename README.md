@@ -35,3 +35,8 @@ kujirad init "<moniker-ismi>" --chain-id=harpoon-4
 kujirad version
 ```
 Version 0.4.0 olması lazım
+# Seed & Ayarlar:
+```
+#seeds="87ea1a43e7eecdd54399551b767599921e170399@52.215.221.93:26656"
+wget -O $HOME/.kujira/config/genesis.json https://raw.githubusercontent.com/Team-Kujira/networks/master/testnet/harpoon-4.json
+```
