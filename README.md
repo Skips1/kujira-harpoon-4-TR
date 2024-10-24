@@ -40,3 +40,13 @@ Version 0.4.0 olması lazım
 #seeds="87ea1a43e7eecdd54399551b767599921e170399@52.215.221.93:26656"
 wget -O $HOME/.kujira/config/genesis.json https://raw.githubusercontent.com/Team-Kujira/networks/master/testnet/harpoon-4.json
 ```
+# Node Başlatılması: 
+```
+screen -S node
+kujirad start
+```
+
+# CTRL + A + D screenden çıkın ve peer adresinizi alın. Ana ekran açılınca bu komutla node id alın.
+```
+kujirad  tendermint show-node-id
+```
