@@ -54,3 +54,8 @@ kujirad  tendermint show-node-id
 ```
 " 8a11c650e5233ae6a88c825a1ee6f8c46ff81a77@148.251.64.113:26656 "
 ```
+# DAHA FAZLA SORUNUZ VARSA KUJİRA TÜRKİYE TELEGRAM GRUBU:
+
+[Telegram](https://t.me/KujiraTurkish)
+
+Teşekkürler <3
